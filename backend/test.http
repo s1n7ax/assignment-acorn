@@ -1,0 +1,15 @@
+### add review
+POST http://localhost:8080/v1/reviews
+Content-Type: application/json
+
+{
+	"username": "srinesh",
+	"rating": 1,
+	"comment": "srinesh comment"
+}
+
+### get all reviews
+GET http://localhost:8080/v1/reviews?order_by=rating_low
+
+### summary
+GET http://localhost:8080/v1/reviews/summary
